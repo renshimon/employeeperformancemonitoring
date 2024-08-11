@@ -1,0 +1,16 @@
+.colorF{
+	/*background-image: linear-gradient(to left,#DF48B0,#E63068,#DF48B0);*/
+	background-image: linear-gradient(to left,#00A4CD,#36C6E9,#00A4CD);
+}
+.fondo1{
+/*background-image: linear-gradient(80deg,#D669AD ,#CAAAC9,#D669AD);*/
+background-image: linear-gradient(80deg,#00A4CD,#36C6E9,#00A4CD);
+}
+.fondo2{
+/*background-image: linear-gradient(80deg,#D669AD ,white,#D669AD);*/
+background-image: linear-gradient(80deg,#00A4CD,#51D4F5,#00A4CD);
+}
+.fondo3{
+/*background-image: linear-gradient(80deg,#DF48B0,#E63068,#DF48B0);*/
+background-image: linear-gradient(80deg,#00A4CD,#36C6E9,#00A4CD);
+}

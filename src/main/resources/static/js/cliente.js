@@ -1,0 +1,20 @@
+$('body').on('click','.editarCliente',function(){
+	$('#id').val($(this).attr('id'));
+	$('#nombre').val($(this).attr('param1'));
+	$('#appaterno').val($(this).attr('param2'));
+	$('#apmaterno').val($(this).attr('param3'));
+	$('#correo').val($(this).attr('param4'));
+	$('#direccion').val($(this).attr('param5'));
+	$('#telefono').val($(this).attr('param6'));
+	$('#formularioModal').modal({show:true});
+});
+
+$("#btnNueva").click(function(){
+	$('#id').val('');
+	$('#nombre').val('');
+	$('#appaterno').val('');
+	$('#apmaterno').val('');
+	$('#correo').val('');
+	$('#direccion').val('');
+	$('#telefono').val('');
+});

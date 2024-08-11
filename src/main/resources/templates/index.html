@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" type="text/css" th:href="@{/css/bootstrap.min.css}">
+    <script type="text/javascript" th:src="@{/js/jquery-3.5.1.slim.min.js}"></script>
+    <script type="text/javascript" th:src="@{/js/bootstrap.bundle.min.js}"></script>
+    <link rel="stylesheet" type="text/css" th:href="@{/css/estiloLogin.css}">
+    
+
+
+
+	<title>Login</title>
+</head> 
+<body>
+	<div class="container">
+	
+	<div class="alert alert-danger alert-dismissible fade show"
+			role="alert" th:if="${error!=null}">
+			<strong>Error</strong> <span th:text="${error}"></span>
+			<button type="button" class="close" data-dismiss="alert"
+				aria-label="Close">
+				<span aria-hidden="true">&times;</span>
+			</button>
+		</div>
+		<div class="marco">
+			<div class="card" style="border-radius: 1rem;">
+          <div class="row g-0">
+            <div class="col-md-6 col-lg-5 d-flex">
+              <img
+                src="imagenes/logo.png"
+                alt="login form"
+                class="img-fluid" style="border-radius: 1rem 0 0 1rem;" 
+              />
+            </div>
+            <div class="col-md-6 col-lg-7 d-flex align-items-center">
+              <div class="card-body p-4 p-lg-5 text-black">
+
+                <form class="needs-validation" novalidate th:action="@{/}" method="post">
+
+                  <h5 class="fw-normal mb-3 pb-3" style="letter-spacing: 1px;">INICIAR SECION</h5>
+
+                  <div class="form-outline mb-4">
+                    <input type="text" class="form-control form-control-lg" 
+                    name="username" id="username" placeholder="Ingrese Usuario" required="required"/>
+                    <div class="invalid-feedback">Ingrese usuario</div>
+                  </div>
+
+                  <div class="form-outline mb-4">
+                    <input type="password" class="form-control form-control-lg"
+                    name="password" id="password" placeholder="Ingrese Contraseña" required="required" />
+                    <div class="invalid-feedback">Ingrese contraseña</div>
+                  </div>
+
+                  <div class="pt-1 mb-4">
+                    <button class="btn btn-dark btn-lg btn-block" type="submit">Iniciar Secion</button>
+                  </div>
+
+                </form>
+
+              </div>
+            </div>
+          </div>
+        </div>
+		</div>
+	</div> 
+	
+
+<script type="text/javascript" th:src="@{/js/validacion.js}"></script>
+
+</body>
+</html>
